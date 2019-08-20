@@ -1,0 +1,24 @@
+//mixin
+@import 'mixin';
+//general
+@import 'reset';
+@import 'variables';
+// page
+@import 'page/product';
+@import 'page/shopping';
+// components
+@import 'components/showcase';
+@import 'components/navigation';
+@import 'components/card';
+@import 'components/carousel';
+@import 'components/discount';
+@import 'components/button';
+@import 'components/adContent';
+@import 'components/review';
+@import 'components/item';
+@import 'components/summary';
+@import 'components/professor';
+@import 'components/signIn';
+@import 'components/shopping';
+//bootstrap
+@import 'bootstrap_modify/bootstrap';

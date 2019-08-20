@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .offset-3 {
+            margin-right: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="container">
+            <ul class="navigation__menu">
+                <li class="navigation__item"><a href="" class="navigation__link">صفحه اصلی</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">دوره ها</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">آموزش ها</a></li>
+                <li class="navigation__item register"><a href="" class="navigation__link">ورود | ثبت نام</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="shopping__page">
+        <div class="container">
+
+            <!-- shopping table -->
+
+            <div class="row">
+
+                <div class="shopping col-md-8">
+                    <h3 class="shopping__title">سبد خرید شما</h3>
+                    <table class="table table-striped shopping__table table-borderless">
+                        <thead>
+                            <tr>
+
+
+                                <th scope="col">نام محصول</th>
+                                <th scope="col">قیمت</th>
+                                <th scope="col">عملیات</th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+
+                                <td>
+
+                                    آموزش کامل سی اس اس انیمیشن
+
+                                </td>
+                                <td>۱۵.۵۰۰ تومان</td>
+                                <td>
+                                    <a href="" class="text-danger">&times;</a>
+                                </td>
+
+                            </tr>
+                            <tr>
+
+
+                                <td>
+
+                                    آموزش کامل سی اس اس انیمیشن
+
+                                </td>
+                                <td>۱۵.۵۰۰ تومان</td>
+                                <td>
+                                    <a href="" class="text-danger">&times;</a>
+                                </td>
+
+                            </tr>
+                            <tr>
+
+                                <td>جمع کل</td>
+                                <td>۳۰.۰۰۰ تومان</td>
+                                <td></td>
+                            </tr>
+                            <!-- <tr class="bg-secondary text-white">
+
+                                <td>مبلغ قابل پرداخت</td>
+                                <td>۳۰.۰۰۰ تومان</td>
+                                <td></td>
+                            </tr>
+                            <tr class="bg-success text-white">
+
+                                <td>مبلغ قابل پرداخت با اعمال تخفیف</td>
+                                <td>۳۰.۰۰۰ تومان</td>
+                                <td class="text-white">تخفیف اعمال شد</td>
+                            </tr> -->
+
+
+                        </tbody>
+
+                    </table>
+                    <!-- <a href="" class="btn button my-3">تکمیل نهایی سفارش</a> -->
+
+                    <button type="button" class="btn btn-block text-primary mt-3 button--shopping" data-toggle='collapse' data-target='#discount'>اگر کد تخفیف دارید وارد کنید:</button>
+                    <div class="collapse show shopping__discount bg-light text-right" id="discount">
+                        <form action="" method="">
+                            <input type="text" class="form-control bg-light" placeholder="کد تخفیف">
+                            <input type="submit" class="btn btn-outline-success mt-4" value="اعمال تخفیف">
+                        </form>
+                    </div>
+
+
+
+
+
+
+                </div>
+                <div class="payment col-md-4">
+                    <h2 class="payment__title">اطلاعات سبد خرید</h2>
+                    <div class="payment__summary">
+                        <ul class="payment__list">
+                            <li class="payment__item">
+                                مبلغ کل
+                                <span class="payment__item__value"> ۳۰.۰۰۰ تومان</span>
+                            </li>
+                            <li class="payment__item">
+                                تخفیف
+                                <span class="payment__item__value"> ۵.۰۰۰ تومان</span>
+                            </li>
+                            <li class="payment__item">
+                                اعتبار حساب شما
+                                <span class="payment__item__value"> ۵.۰۰۰ تومان</span>
+                            </li>
+                            <li class="payment__item">
+                                مبلغ قابل پرداخت با اعمال تخفیف
+                                <span class="payment__item__value"> ۵.۰۰۰ تومان</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2 class="payment__title">روش پرداخت</h2>
+
+                    <a href="" class="btn btn-success payment__btn">کارت بانکی</a>
+                    <a href="" class="btn btn-outline-info payment__btn">اعتبار حساب</a>
+                    <!-- <ul class="payment__list">
+                        <li class="payment__item">
+                            هنگام استفاده از اعتبار، از شارژ بودن کافی اعتبار خود مطمئن شوید
+
+                        </li>
+                        <li class="payment__item">
+                            با افزایش اعتبار می توانید تخفیفات ویژه ای دریافت کنید
+
+                        </li>
+
+                    </ul> -->
+                    <h3 class="alert alert-info">هنگام استفاده از اعتبار، از شارژ بودن کافی اعتبار خود مطمئن شوید</h3>
+                    <h3 class="alert alert-info">با <a href="" class="alert-link">افزایش اعتبار</a> می توانید تخفیفات ویژه ای دریافت کنید</h3>
+
+
+
+                </div>
+            </div>
+
+
+
+
+    </main>
+
+    <script src="bootstrap-4.3.1-dist/js/jquery.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+</body>
+
+</html>

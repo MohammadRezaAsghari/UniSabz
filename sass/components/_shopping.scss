@@ -1,0 +1,74 @@
+.shopping {
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-left: 6rem;
+    @include parent-style;
+    text-align: center;
+    &__table {
+        text-align: center;
+    }
+    &__discount {
+        padding: 2rem;
+    }
+    &__title {
+        text-align: right;
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 1rem;
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
+        border-bottom: $border-light;
+    }
+}
+
+//payment section
+.payment {
+    margin-top: 4rem;
+    margin-right: -4rem;
+    padding: 1.5rem;
+    background-color: white;
+    color: $first-color;
+    @include parent-style;
+    &::before {
+        @include circle(-25px, -25px, 60px, 60px, transparent, 15px, top, left, true);
+    }
+    &__title {
+        font-size: 1.4rem;
+        padding-bottom: 1.5rem;
+        position: relative;
+        font-weight: bold;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 50px;
+            height: 1px;
+            background-color: rgba($text-color, 0.15);
+        }
+    }
+    &__summary {}
+    &__list {}
+    &__item {
+        display: flex;
+        font-size: 1.3rem;
+        padding: 1rem 0;
+        line-height: 2;
+    }
+    &__item__value {
+        margin-right: auto;
+    }
+    &__btn {
+        padding: 2rem 0;
+        display: block;
+        margin: 1rem 0;
+        &:last-child {
+            background-color: #fff;
+            border: 1px dashed $header-color;
+            color: $header-color;
+            &:hover {
+                border: 1px solid $header-color;
+            }
+        }
+    }
+}

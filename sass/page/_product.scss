@@ -1,0 +1,100 @@
+.title {
+    background-color: white;
+    padding: 1.5rem;
+    font-size: 2rem;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    color: $header-color;
+    .breadcrumb {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        background-color: white;
+        padding-right: 0px;
+        &-item {
+            &::before {
+                content: "|";
+                margin: 0 .5rem;
+            }
+            &:first-child::before {
+                content: "";
+            }
+        }
+    }
+}
+
+.lb {
+    &__movie {
+        height: 400px;
+        background-color: gray;
+    }
+    &__detail {
+        background-color: white;
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+        & .btn__group {
+            // border-bottom: 1px solid rgba($text-color, 0.2);
+            display: block;
+            padding: 1rem 2rem;
+            button {
+                padding: 1rem 2rem;
+                color: black;
+                border: 1px solid rgba($text-color, 0.5);
+                border-radius: 5rem !important;
+                margin-left: 1rem;
+                &:focus {
+                    background-color: $third-color;
+                    color: white;
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+    }
+    &__course {
+        padding: 1rem 2rem;
+        font-size: 1.3rem;
+        line-height: 2.2;
+        &__title {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba($text-color, 0.2);
+            margin-top: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        li {
+            flex: 0 1 45%;
+            padding: .5rem 2rem .5rem 0;
+            border-radius: 3rem;
+            margin-bottom: .5rem;
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 0px;
+                height: 0px;
+                border: 7px solid $third-color;
+                border-left: none;
+                border-top-color: transparent;
+                border-bottom-color: transparent;
+            }
+        }
+    }
+    & button {
+        font-size: 1.4rem;
+        // border-radius: 0px;
+    }
+}
+
+// .rb {}

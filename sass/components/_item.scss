@@ -1,0 +1,17 @@
+.item {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    &:nth-child(even) {
+        background-color: rgba($text-color, 0.05);
+    }
+    &__detail {
+        span,
+        a {
+            font-size: 1.2rem;
+        }
+    }
+    &__title {
+        font-size: 1.3rem;
+    }
+}

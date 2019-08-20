@@ -1,0 +1,77 @@
+/* all reset csss ----------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: iransans;
+    src: url('../font/iransans/eot/IRANSans-Light-web.eot');
+    src: url('../font/iransans/eot/IRANSans-Light-web.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../font/iransans/woff2/IRANSans-Light-web.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../font/iransans/woff/IRANSans-Light-web.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../font/iransans/ttf/IRANSans-Light-web.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: iransans, Tahoma, Arial, Helvetica, sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #fff;
+    background-color: #f3f7fa;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+a::selection,
+span::selection {
+    color: white;
+    background-color: #7ed957;
+}
+
+table {
+    font-size: 1.3rem;
+}
+
+.btn {
+    font-size: 1.4rem;
+}
+
+input[type="text"] {
+    padding: 2rem 1rem;
+    font-size: 1.4rem;
+}

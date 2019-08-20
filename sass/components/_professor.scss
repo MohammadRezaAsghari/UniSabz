@@ -1,0 +1,44 @@
+.professor {
+    @include parent-style;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    &__img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: gray;
+        position: relative;
+        margin-bottom: 2rem;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-image: $gradient;
+            transform: scale(1.2);
+            border-radius: 50%;
+        }
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: block;
+            position: relative;
+            z-index: 5;
+        }
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    &__about {
+        font-size: 1.3rem;
+        line-height: 2;
+        padding: 1rem;
+        text-align: justify;
+    }
+}
