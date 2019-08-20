@@ -81,7 +81,7 @@ table {
 
 input[type="text"] {
   padding: 2rem 1rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .title {
@@ -538,7 +538,7 @@ input[type="text"] {
 }
 
 .button {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding: 1rem 2rem;
   color: white;
   background-image: radial-gradient(circle farthest-corner at 0.2% 0%, #ee0979 0%, #ff6a00 100.2%);
@@ -909,6 +909,21 @@ input[type="text"] {
   text-align: center;
 }
 
+.shopping::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -50px;
+  bottom: -45px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 30px solid rgba(74, 74, 74, 0.3);
+  opacity: .2;
+  border-radius: 50%;
+  z-index: -1;
+}
+
 .shopping__table {
   text-align: center;
 }
@@ -925,6 +940,10 @@ input[type="text"] {
   padding-bottom: 2rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid rgba(125, 125, 125, 0.1);
+}
+
+.text-danger {
+  font-size: 1.8rem;
 }
 
 .payment {
@@ -1003,5 +1022,9 @@ input[type="text"] {
 .alert {
   font-size: 1.3rem;
   line-height: 2;
+}
+
+.btn {
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=main.css.map */

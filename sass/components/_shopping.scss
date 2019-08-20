@@ -3,6 +3,9 @@
     padding: 1rem;
     padding-left: 6rem;
     @include parent-style;
+    &::before {
+        @include circle(-50px, -45px, 100px, 100px, transparent, 30px, bottom, right, true);
+    }
     text-align: center;
     &__table {
         text-align: center;
@@ -19,6 +22,10 @@
         margin-bottom: 1rem;
         border-bottom: $border-light;
     }
+}
+
+.text-danger {
+    font-size: 1.8rem;
 }
 
 //payment section
