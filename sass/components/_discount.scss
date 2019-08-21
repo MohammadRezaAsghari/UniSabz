@@ -1,11 +1,13 @@
 //discount
 .discount {
-    background-color: $showcase-color;
+    // background-color: $showcase-color;
+    background-color: rgba(0, 0, 0, 0.1);
     color: #525c65;
     display: flex;
     align-items: center;
     border-radius: $border-radius;
     padding-left: 2rem;
+    margin-top: 2rem;
     img {
         height: 170px;
         margin-left: 2rem;

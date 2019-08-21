@@ -1,22 +1,42 @@
 .navigation {
     height: 70px;
     background-color: $first-color;
+    background-color: #181818;
+    position: relative;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    margin-bottom: 70px;
     .container {
         height: 100%;
-        padding: 1.5rem 0;
     }
     &__menu {
         width: 100%;
         height: 100%;
         display: flex;
+        position: relative;
     }
     &__item {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         display: flex;
         align-items: center;
         margin-left: 1rem;
-        padding: 0 1rem;
-        border-radius: 7px;
+        padding: 0 2rem;
+        position: relative;
+        transition: background-color, .5s;
+        color: white;
+        cursor: pointer;
+        &:hover {
+            background-color: lighten(#181818, 5%);
+        }
+        &:hover .navigation__sub {
+            opacity: 1;
+            visibility: visible;
+            margin-top: 0px;
+        }
+    }
+    .has-megamenu {
+        position: static !important;
     }
     &__link {
         &:link,
@@ -27,5 +47,39 @@
     & .register {
         background-color: $third-color;
         margin-right: auto;
+        align-self: center;
+        padding: 1rem;
+        border-radius: 7px;
+    }
+    // sub menu is here
+    &__sub {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        z-index: 100;
+        border-top: 3px solid $gradient-color-first;
+        opacity: 0;
+        visibility: hidden;
+        margin-top: 5px;
+        width: 100%;
+        background-color: #181818;
+        display: flex;
+        transition: margin-top .3s;
+        &__item {
+            color: white;
+            padding: 1.5rem;
+            background-color: #181818;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            &:hover {
+                border-bottom-color: $gradient-color-first;
+            }
+        }
+        &__link {
+            &:link,
+            &:visited {
+                color: white;
+            }
+        }
     }
 }

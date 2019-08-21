@@ -3,12 +3,14 @@
     font-size: 1.3rem;
     padding: 1rem 2rem;
     color: white;
-    background-image: radial-gradient( circle farthest-corner at 0.2% 0%, rgba(238, 9, 121, 1) 0%, rgba(255, 106, 0, 1) 100.2%);
+    // background-image: radial-gradient( circle farthest-corner at 0.2% 0%, rgba(238, 9, 121, 1) 0%, rgba(255, 106, 0, 1) 100.2%);
+    background-color: $gradient-color-first;
     // background-size: 200%;
     // background-position: 100%;
     transition: all 1s;
     &:hover {
-        background-image: radial-gradient( circle farthest-corner at 0.2% 0%, rgba(255, 106, 0, 1) 0%, rgba(238, 9, 121, 1) 100.2%);
+        // background-image: radial-gradient( circle farthest-corner at 0.2% 0%, rgba(255, 106, 0, 1) 0%, rgba(238, 9, 121, 1) 100.2%);
+        background-color: darken($gradient-color-first, 10%);
         color: white;
         // background-size: 100%;
         // background-position: 0%;

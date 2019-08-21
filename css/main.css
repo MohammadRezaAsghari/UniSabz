@@ -88,8 +88,8 @@ input[type="text"] {
   background-color: white;
   padding: 1.5rem;
   font-size: 2rem;
-  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
-          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
+  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
   border-radius: 5px;
   color: #4a4a4a;
 }
@@ -117,8 +117,8 @@ input[type="text"] {
 
 .lb__detail {
   background-color: white;
-  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
-          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
+  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
   border-radius: 5px;
 }
 
@@ -203,7 +203,7 @@ input[type="text"] {
 
 .shopping__page {
   padding-bottom: 6rem;
-  background-image: linear-gradient(-140deg, transparent 75%, #7ed957 75%);
+  background-image: linear-gradient(-140deg, transparent 85%, #ee0979 85%);
   position: relative;
 }
 
@@ -263,11 +263,16 @@ input[type="text"] {
 .navigation {
   height: 70px;
   background-color: #283138;
+  background-color: #181818;
+  position: relative;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  margin-bottom: 70px;
 }
 
 .navigation .container {
   height: 100%;
-  padding: 1.5rem 0;
 }
 
 .navigation__menu {
@@ -276,10 +281,11 @@ input[type="text"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .navigation__item {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,8 +293,26 @@ input[type="text"] {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 1rem;
-  padding: 0 1rem;
-  border-radius: 7px;
+  padding: 0 2rem;
+  position: relative;
+  -webkit-transition: background-color, .5s;
+  transition: background-color, .5s;
+  color: white;
+  cursor: pointer;
+}
+
+.navigation__item:hover {
+  background-color: #252525;
+}
+
+.navigation__item:hover .navigation__sub {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0px;
+}
+
+.navigation .has-megamenu {
+  position: static !important;
 }
 
 .navigation__link:link, .navigation__link:visited {
@@ -298,15 +322,56 @@ input[type="text"] {
 .navigation .register {
   background-color: #7ed957;
   margin-right: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1rem;
+  border-radius: 7px;
+}
+
+.navigation__sub {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  z-index: 100;
+  border-top: 3px solid #ee0979;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 5px;
+  width: 100%;
+  background-color: #181818;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: margin-top .3s;
+  transition: margin-top .3s;
+}
+
+.navigation__sub__item {
+  color: white;
+  padding: 1.5rem;
+  background-color: #181818;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+.navigation__sub__item:hover {
+  border-bottom-color: #ee0979;
+}
+
+.navigation__sub__link:link, .navigation__sub__link:visited {
+  color: white;
 }
 
 /* card----------------------------------------------------*/
 .card__parent {
   background-color: #fff;
-  -webkit-box-shadow: 0 0 5px rgba(125, 125, 125, 0.2);
-          box-shadow: 0 0 5px rgba(125, 125, 125, 0.2);
+  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
   padding: 2rem 1rem;
   border-radius: 5px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .card--parent {
@@ -501,12 +566,8 @@ input[type="text"] {
 }
 
 /* carousel----------------------------------------------------*/
-.carousel-item img {
-  border-radius: 5px;
-}
-
 .discount {
-  background-color: #f3f8fe;
+  background-color: rgba(0, 0, 0, 0.1);
   color: #525c65;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,6 +577,7 @@ input[type="text"] {
           align-items: center;
   border-radius: 5px;
   padding-left: 2rem;
+  margin-top: 2rem;
 }
 
 .discount img {
@@ -541,13 +603,13 @@ input[type="text"] {
   font-size: 1.3rem;
   padding: 1rem 2rem;
   color: white;
-  background-image: radial-gradient(circle farthest-corner at 0.2% 0%, #ee0979 0%, #ff6a00 100.2%);
+  background-color: #ee0979;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .button:hover {
-  background-image: radial-gradient(circle farthest-corner at 0.2% 0%, #ff6a00 0%, #ee0979 100.2%);
+  background-color: #bd0760;
   color: white;
 }
 
@@ -722,8 +784,8 @@ input[type="text"] {
 .summary {
   background-color: white;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
-          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
+  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
   padding: 2rem 1rem;
 }
 
@@ -770,8 +832,8 @@ input[type="text"] {
 .professor {
   background-color: white;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
-          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
+  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -833,8 +895,8 @@ input[type="text"] {
 .signIn {
   background-color: white;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
-          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
+  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -904,8 +966,8 @@ input[type="text"] {
   padding-left: 6rem;
   background-color: white;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
-          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
+  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
   text-align: center;
 }
 
@@ -954,8 +1016,8 @@ input[type="text"] {
   color: #283138;
   background-color: white;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
-          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.3);
+  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
 }
 
 .payment::before {
