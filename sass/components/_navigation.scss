@@ -1,12 +1,10 @@
 .navigation {
     height: 70px;
     background-color: $first-color;
-    background-color: #181818;
     position: relative;
-    position: fixed;
+    position: sticky;
     z-index: 100;
     width: 100%;
-    margin-bottom: 70px;
     .container {
         height: 100%;
     }
@@ -26,8 +24,15 @@
         transition: background-color, .5s;
         color: white;
         cursor: pointer;
+        &:first-child {
+            padding: 0px;
+            transform: scale(.7);
+        }
         &:hover {
             background-color: lighten(#181818, 5%);
+        }
+        &:hover:first-child {
+            background-color: transparent;
         }
         &:hover .navigation__sub {
             opacity: 1;
@@ -45,11 +50,18 @@
         }
     }
     & .register {
-        background-color: $third-color;
         margin-right: auto;
         align-self: center;
-        padding: 1rem;
-        border-radius: 7px;
+        display: flex;
+        padding: 0px;
+        &:hover {
+            background-color: transparent;
+        }
+        & .navigation__link {
+            padding: 1rem 2rem;
+            margin-right: 1rem;
+            border-radius: 7px;
+        }
     }
     // sub menu is here
     &__sub {
@@ -57,7 +69,7 @@
         top: 70px;
         right: 0;
         z-index: 100;
-        border-top: 3px solid $gradient-color-first;
+        border-top: 2px solid $unisabz-color;
         opacity: 0;
         visibility: hidden;
         margin-top: 5px;
@@ -70,9 +82,9 @@
             padding: 1.5rem;
             background-color: #181818;
             cursor: pointer;
-            border-bottom: 3px solid transparent;
+            border-bottom: 2px solid transparent;
             &:hover {
-                border-bottom-color: $gradient-color-first;
+                border-bottom-color: $unisabz-color;
             }
         }
         &__link {

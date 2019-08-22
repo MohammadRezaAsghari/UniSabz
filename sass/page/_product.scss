@@ -42,7 +42,7 @@
                 border-radius: 5rem !important;
                 margin-left: 1rem;
                 &:focus {
-                    background-color: $third-color;
+                    background-color: $unisabz-color;
                     color: white;
                     outline: none;
                     border: none;
@@ -84,7 +84,7 @@
                 transform: translateY(-50%);
                 width: 0px;
                 height: 0px;
-                border: 7px solid $third-color;
+                border: 7px solid $unisabz-color;
                 border-left: none;
                 border-top-color: transparent;
                 border-bottom-color: transparent;

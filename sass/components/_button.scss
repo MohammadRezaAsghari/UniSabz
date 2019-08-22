@@ -4,13 +4,13 @@
     padding: 1rem 2rem;
     color: white;
     // background-image: radial-gradient( circle farthest-corner at 0.2% 0%, rgba(238, 9, 121, 1) 0%, rgba(255, 106, 0, 1) 100.2%);
-    background-color: $gradient-color-first;
+    background-color: $unisabz-color;
     // background-size: 200%;
     // background-position: 100%;
     transition: all 1s;
     &:hover {
         // background-image: radial-gradient( circle farthest-corner at 0.2% 0%, rgba(255, 106, 0, 1) 0%, rgba(238, 9, 121, 1) 100.2%);
-        background-color: darken($gradient-color-first, 10%);
+        background-color: darken($unisabz-color, 10%);
         color: white;
         // background-size: 100%;
         // background-position: 0%;
@@ -23,6 +23,22 @@
             outline: none;
             border-color: transparent;
             box-shadow: none;
+        }
+    }
+    &--outline {
+        &:link,
+        &:visited {
+            color: darken(white, 5%);
+            border: 2px solid $unisabz-color;
+            background-color: transparent;
+        }
+    }
+    &--outline-dark {
+        &:link,
+        &:visited {
+            color: $first-color;
+            border: 2px solid $unisabz-color;
+            background-color: lighten($unisabz-color, 45%);
         }
     }
 }
