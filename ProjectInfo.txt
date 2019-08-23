@@ -1,0 +1,5 @@
+1. responsive the project
+2. complete the header
+3. complete the footer
+4. complete the panel
+5. complete map (you can use tutsplus design for your map)
