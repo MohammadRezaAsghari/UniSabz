@@ -23,7 +23,10 @@
 }
 
 .lb {
-    background-color: green;
+    @media (max-width: 991px) {
+        padding-right: 0px;
+        margin-top: 3rem;
+    }
     &__movie {
         height: 400px;
         background-color: gray;
@@ -99,5 +102,7 @@
 }
 
 .rb {
-    background-color: red;
+    @media (max-width: 991px) {
+        padding-left: 0px;
+    }
 }

@@ -6,3 +6,9 @@
 .btn {
     font-size: 1.3rem;
 }
+
+.offset-0 {
+    @media (max-width: 767px) {
+        margin-right: 0px !important;
+    }
+}

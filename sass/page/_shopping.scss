@@ -2,7 +2,9 @@
     padding-bottom: 6rem;
     background-image: linear-gradient(-140deg, transparent 85%, $gradient-color-first 85%);
     position: relative;
-    &::before {
-        @include circle(10px, 20px, 400px, 400px, transparent, 100px, bottom, left, false);
+    @media (min-width: 673px) {
+        &::before {
+            @include circle(10px, 20px, 400px, 400px, transparent, 100px, bottom, left, false);
+        }
     }
 }

@@ -1,8 +1,11 @@
 .signIn {
     @include parent-style;
-    padding: 2rem;
     display: flex;
     position: relative;
+    padding: 2rem;
+    @media (max-width: 767px) {
+        margin: 0px !important;
+    }
     &::before {
         content: "";
         display: block;
@@ -24,6 +27,9 @@
         background-image: url(../img/logo.PNG);
         background-size: cover;
         background-position: -5px 0;
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
     &__title {
         text-align: center;

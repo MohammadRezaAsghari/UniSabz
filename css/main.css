@@ -48,7 +48,6 @@ body {
   font-family: iransans, Tahoma, Arial, Helvetica, sans-serif;
   direction: rtl;
   text-align: right;
-  background-color: #fff;
   background-color: #f3f7fa;
 }
 
@@ -136,8 +135,11 @@ input[type="text"] {
   content: "";
 }
 
-.lb {
-  background-color: green;
+@media (max-width: 991px) {
+  .lb {
+    padding-right: 0px;
+    margin-top: 3rem;
+  }
 }
 
 .lb__movie {
@@ -231,8 +233,10 @@ input[type="text"] {
   font-size: 1.4rem;
 }
 
-.rb {
-  background-color: red;
+@media (max-width: 991px) {
+  .rb {
+    padding-left: 0px;
+  }
 }
 
 .shopping__page {
@@ -241,18 +245,20 @@ input[type="text"] {
   position: relative;
 }
 
-.shopping__page::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 10px;
-  bottom: 20px;
-  width: 400px;
-  height: 400px;
-  background-color: transparent;
-  border: 100px solid rgba(74, 74, 74, 0.3);
-  opacity: .2;
-  border-radius: 50%;
+@media (min-width: 673px) {
+  .shopping__page::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    border: 100px solid rgba(74, 74, 74, 0.3);
+    opacity: .2;
+    border-radius: 50%;
+  }
 }
 
 /* showcase----------------------------------------------------*/
@@ -1018,11 +1024,17 @@ input[type="text"] {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
           box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
-  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  padding: 2rem;
+}
+
+@media (max-width: 767px) {
+  .signIn {
+    margin: 0px !important;
+  }
 }
 
 .signIn::before {
@@ -1050,6 +1062,12 @@ input[type="text"] {
   background-image: url(../img/logo.PNG);
   background-size: cover;
   background-position: -5px 0;
+}
+
+@media (max-width: 767px) {
+  .signIn__logo {
+    display: none;
+  }
 }
 
 .signIn__title {
@@ -1092,19 +1110,21 @@ input[type="text"] {
   text-align: center;
 }
 
-.shopping::before {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -50px;
-  bottom: -45px;
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-  border: 30px solid rgba(74, 74, 74, 0.3);
-  opacity: .2;
-  border-radius: 50%;
-  z-index: -1;
+@media (min-width: 673px) {
+  .shopping::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -50px;
+    bottom: -45px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 30px solid rgba(74, 74, 74, 0.3);
+    opacity: .2;
+    border-radius: 50%;
+    z-index: -1;
+  }
 }
 
 .shopping__table {
@@ -1141,19 +1161,27 @@ input[type="text"] {
           box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
 }
 
-.payment::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -25px;
-  top: -25px;
-  width: 60px;
-  height: 60px;
-  background-color: transparent;
-  border: 15px solid rgba(74, 74, 74, 0.3);
-  opacity: .2;
-  border-radius: 50%;
-  z-index: -1;
+@media (max-width: 992px) {
+  .payment {
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 673px) {
+  .payment::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 15px solid rgba(74, 74, 74, 0.3);
+    opacity: .2;
+    border-radius: 50%;
+    z-index: -1;
+  }
 }
 
 .payment__title {
@@ -1209,5 +1237,11 @@ input[type="text"] {
 
 .btn {
   font-size: 1.3rem;
+}
+
+@media (max-width: 767px) {
+  .offset-0 {
+    margin-right: 0px !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

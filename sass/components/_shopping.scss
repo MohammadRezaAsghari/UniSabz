@@ -3,8 +3,10 @@
     padding: 1rem;
     padding-left: 6rem;
     @include parent-style;
-    &::before {
-        @include circle(-50px, -45px, 100px, 100px, transparent, 30px, bottom, right, true);
+    @media (min-width: 673px) {
+        &::before {
+            @include circle(-50px, -45px, 100px, 100px, transparent, 30px, bottom, right, true);
+        }
     }
     text-align: center;
     &__table {
@@ -35,9 +37,14 @@
     padding: 1.5rem;
     background-color: white;
     color: $first-color;
+    @media (max-width: 992px) {
+        margin-right: 0px;
+    }
     @include parent-style;
-    &::before {
-        @include circle(-25px, -25px, 60px, 60px, transparent, 15px, top, left, true);
+    @media (min-width:673px) {
+        &::before {
+            @include circle(-25px, -25px, 60px, 60px, transparent, 15px, top, left, true);
+        }
     }
     &__title {
         font-size: 1.4rem;
