@@ -65,6 +65,11 @@
     }
     // sub menu is here
     &__sub {
+        //do not need this menu in size <768px 
+        //hambergur menu will be replaced
+        @media (max-width: 768px) {
+            display: none;
+        }
         position: absolute;
         top: 70px;
         right: 0;
@@ -83,14 +88,48 @@
             background-color: #181818;
             cursor: pointer;
             border-bottom: 2px solid transparent;
+            position: relative;
             &:hover {
                 border-bottom-color: $unisabz-color;
+            }
+            &:hover .navigation__sub__menu {
+                margin-top: 0px;
+                opacity: 1;
+                visibility: visible;
             }
         }
         &__link {
             &:link,
             &:visited {
                 color: white;
+            }
+        }
+        &__menu {
+            border-top: 2px solid $unisabz-color;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            margin-top: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transition: margin-top .3s;
+            &__item {
+                color: white;
+                padding: 1.5rem;
+                background-color: #181818;
+                cursor: pointer;
+                border-bottom: 2px solid transparent;
+                position: relative;
+                &:hover {
+                    background-color: #202020;
+                }
+            }
+            &__link {
+                color: white;
+                &:hover {
+                    color: white;
+                }
             }
         }
     }
