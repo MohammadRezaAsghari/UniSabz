@@ -136,6 +136,10 @@ input[type="text"] {
   content: "";
 }
 
+.lb {
+  background-color: green;
+}
+
 .lb__movie {
   height: 400px;
   background-color: gray;
@@ -225,6 +229,10 @@ input[type="text"] {
 
 .lb button {
   font-size: 1.4rem;
+}
+
+.rb {
+  background-color: red;
 }
 
 .shopping__page {
@@ -477,6 +485,7 @@ input[type="text"] {
   border-radius: 5px;
   -webkit-transition: all .5s;
   transition: all .5s;
+  width: 100%;
 }
 
 .card:hover {
@@ -736,7 +745,6 @@ input[type="text"] {
 
 .adContent {
   background-color: #f3f8fe;
-  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -792,12 +800,17 @@ input[type="text"] {
   display: block;
   font-size: 1.5rem;
   line-height: 2;
+  text-align: center;
 }
 
 .review__parent {
   background-color: #f3f8fe;
   padding-top: 5rem;
   padding-bottom: 8rem;
+}
+
+.review__holder {
+  margin-bottom: 5rem;
 }
 
 .review {

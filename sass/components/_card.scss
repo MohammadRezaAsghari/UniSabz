@@ -52,6 +52,7 @@
     margin: 2rem 0;
     border-radius: $border-radius;
     transition: all .5s;
+    width: 100%;
     &:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }

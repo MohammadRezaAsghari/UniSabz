@@ -23,6 +23,7 @@
 }
 
 .lb {
+    background-color: green;
     &__movie {
         height: 400px;
         background-color: gray;
@@ -97,4 +98,6 @@
     }
 }
 
-// .rb {}
+.rb {
+    background-color: red;
+}

@@ -1,7 +1,6 @@
 //adContent
 .adContent {
     background-color: $showcase-color;
-    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +28,7 @@
             display: block;
             font-size: 1.5rem;
             line-height: 2;
+            text-align: center;
         }
     }
 }
