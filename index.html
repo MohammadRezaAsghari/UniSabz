@@ -12,6 +12,10 @@
 </head>
 
 <body>
+
+    <!--********************************************
+    ////this navigation is for loged-in users -->
+
     <nav class="navigation">
         <div class="container">
             <ul class="navigation__menu">
@@ -76,10 +80,13 @@
                     </ul>
 
                 </li>
+                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">جدید ترین ها</a></li>
+                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">پرفروش ترین ها</a></li>
                 <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">ورکشاپ</a></li>
-                <li class="navigation__item register">
-                    <a href="" class="navigation__link button">ثبت نام</a>
-                    <a href="" class="navigation__link button--outline">ورود</a>
+                <li class="navigation__item profile">
+                    <a href="" class="navigation__link profile__card" data-number="۲"></a>
+                    <a href="" class="navigation__link profile__dashbord"></a>
+                    <div class="profile__mega">پروفایل مگا</div>
                     <button type="button" id="ham" class="ham d-none navigation__link">
                         <span class="ham__line"></span>
                         <span class="ham__line"></span>
@@ -91,7 +98,91 @@
         </div>
     </nav>
 
-    <main style="width:100% ; margin-left: 50%; transition:all 1s; border: 5px solid #000;">
+    <!--********************************************
+    ////this navigation is for not loged-in users -->
+
+    <!-- <nav class="navigation">
+        <div class="container">
+            <ul class="navigation__menu">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">
+                        <img src="img/unisabz_logo_6060.png" alt="">
+                    </a>
+                </li>
+                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">صفحه اصلی</a></li>
+                <li class="navigation__item has-megamenu d-none d-md-flex">آموزش ها
+
+                    <ul class="navigation__sub">
+                        <li class="navigation__sub__item">
+                            برنامه نویسی وب
+                            <ul class="navigation__sub__menu">
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> سی اس اس</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> جاوا اسکریپت</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">جی کوئری</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">آنگولار جی اس</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> ری اکت جی اس</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__sub__item"> تجارت الکترونیک
+                            <ul class="navigation__sub__menu">
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">بلاک چین</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> شبکه اجتماعی</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> هوش تجاری</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">امنیت اطلاعات</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__sub__item">
+                            کنکور کارشناسی ارشد
+                            <ul class="navigation__sub__menu">
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> طراحی الگوریتم</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">  ساختمان داده</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">جدید ترین ها</a></li>
+                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">پرفروش ترین ها</a></li>
+                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">ورکشاپ</a></li>
+                <li class="navigation__item register">
+                    <a href="" class="navigation__link button text-white">ثبت نام</a>
+                    <a href="" class="navigation__link button--outline-dark">ورود</a>
+                    <button type="button" id="ham" class="ham d-none navigation__link">
+                            <span class="ham__line"></span>
+                            <span class="ham__line"></span>
+                            <span class="ham__line"></span>
+                            
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <main>
         <!-- carousel -->
 
         <div class="carousel slide" data-ride="carousel">

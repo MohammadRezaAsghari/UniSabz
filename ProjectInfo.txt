@@ -1,5 +1,7 @@
-1. responsive the project
-2. complete the header
-3. complete the footer
-4. complete the panel
+1.ham menu is not complete
+2.buy credit is not complete
+3. complete the panel
+4. complete the footer
+5. about us page (like maktabkhooneh.org)
+
 5. complete map (you can use tutsplus design for your map)

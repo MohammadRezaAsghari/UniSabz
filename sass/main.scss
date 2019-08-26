@@ -1,8 +1,8 @@
-//mixin
-@import 'mixin';
-//general
-@import 'reset';
-@import 'variables';
+//abstract foler : animation ,mixin , rest , variables
+@import 'abstract/mixin';
+@import 'abstract/reset';
+@import 'abstract/variables';
+@import 'abstract/animation';
 // page
 @import 'page/product';
 @import 'page/shopping';

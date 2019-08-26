@@ -42,6 +42,9 @@ body {
     direction: rtl;
     text-align: right;
     background-color: #f3f7fa;
+    @media (max-width: 576px) {
+        padding: 0 1rem;
+    }
 }
 
 img {
