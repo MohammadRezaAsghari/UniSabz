@@ -28,13 +28,17 @@
         margin-top: 3rem;
     }
     &__movie {
-        height: 400px;
+        // height: 400px;
         background-color: gray;
+        video {
+            width: 100%;
+        }
     }
     &__detail {
         background-color: white;
         box-shadow: $box-shadow;
         border-radius: $border-radius;
+        min-height: 200px;
         & .btn__group {
             // border-bottom: 1px solid rgba($text-color, 0.2);
             display: block;
@@ -79,19 +83,15 @@
             border-radius: 3rem;
             margin-bottom: .5rem;
             position: relative;
+            display: flex;
+            align-items: center;
             &::before {
-                content: "";
                 display: block;
                 position: absolute;
-                right: 5px;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 0px;
-                height: 0px;
-                border: 7px solid $unisabz-color;
-                border-left: none;
-                border-top-color: transparent;
-                border-bottom-color: transparent;
+                right: 0px;
+                color: $unisabz-color;
+                font-family: 'icomoon';
+                font-size: 1.5rem;
             }
         }
     }
