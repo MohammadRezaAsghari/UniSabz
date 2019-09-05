@@ -38,13 +38,23 @@
             margin-top: -4px;
         }
     }
+    & .icon-chevron-down::before {
+        font-family: 'icomoon';
+        margin-right: 5px;
+        font-size: 1.4rem;
+    }
     .has-megamenu {
         position: static !important;
+        display: flex;
+        //becasue of the icon / can not work with position
+        flex-direction: row-reverse;
     }
     &__link {
         &:link,
         &:visited {
             color: $first-color;
+            display: flex;
+            align-items: center;
         }
     }
     //this class is for not loged in users navigation

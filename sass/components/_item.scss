@@ -2,8 +2,14 @@
     display: flex;
     padding: 1rem;
     align-items: center;
-    &:nth-child(even) {
-        background-color: rgba($text-color, 0.05);
+    position: relative;
+    padding-right: 3rem;
+    border: 1px solid rgba($text-color, 0.2);
+    &:not(:last-child) {
+        border-bottom: 0px;
+    }
+    &:last-child {
+        // border-bottom: none;
     }
     &__detail {
         span,
@@ -13,5 +19,14 @@
     }
     &__title {
         font-size: 1.3rem;
+        &::before {
+            font-family: 'icomoon';
+            font-size: 1.3rem;
+            position: absolute;
+            right: 1rem;
+            transform: rotate(-180deg);
+            color: rgba($text-color, 0.8);
+            color: $unisabz-color;
+        }
     }
 }

@@ -1383,6 +1383,55 @@ input[type="text"] {
   font-size: 1.5rem;
 }
 
+.lb__course__btn {
+  padding: 1rem 1.5rem;
+  padding-right: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 1rem;
+  border: 1px solid rgba(125, 125, 125, 0.2);
+  background-color: rgba(125, 125, 125, 0.2);
+}
+
+.lb__course__btn:hover {
+  background-color: rgba(125, 125, 125, 0.2);
+}
+
+.lb__course__btn::before {
+  font-family: 'icomoon';
+  font-size: 1.3rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.lb__course__btn__info {
+  font-size: 1.4rem;
+}
+
+.lb__course__btn__info:nth-child(2) {
+  margin-left: auto;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: gray;
+}
+
+.lb__course__btn__info:nth-child(2)::before {
+  content: '(';
+}
+
+.lb__course__btn__info:nth-child(2)::after {
+  content: ')';
+}
+
 .lb button {
   font-size: 1.4rem;
 }
@@ -1511,12 +1560,31 @@ input[type="text"] {
   margin-top: -4px;
 }
 
+.navigation .icon-chevron-down::before {
+  font-family: 'icomoon';
+  margin-right: 5px;
+  font-size: 1.4rem;
+}
+
 .navigation .has-megamenu {
   position: static !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .navigation__link:link, .navigation__link:visited {
   color: #283138;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation .register {
@@ -2378,10 +2446,13 @@ input[type="text"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  padding-right: 3rem;
+  border: 1px solid rgba(125, 125, 125, 0.2);
 }
 
-.item:nth-child(even) {
-  background-color: rgba(125, 125, 125, 0.05);
+.item:not(:last-child) {
+  border-bottom: 0px;
 }
 
 .item__detail span,
@@ -2391,6 +2462,17 @@ input[type="text"] {
 
 .item__title {
   font-size: 1.3rem;
+}
+
+.item__title::before {
+  font-family: 'icomoon';
+  font-size: 1.3rem;
+  position: absolute;
+  right: 1rem;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  color: rgba(125, 125, 125, 0.8);
+  color: #82b541;
 }
 
 .summary {

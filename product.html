@@ -15,37 +15,112 @@
     <nav class="navigation">
         <div class="container">
             <ul class="navigation__menu">
-                <li class="navigation__item"><a href="" class="navigation__link">صفحه اصلی</a></li>
-                <li class="navigation__item has-megamenu">آموزش ها
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">
+                        <img src="img/log_light_6060.png" alt="">
+                    </a>
+                </li>
+                <li class="navigation__item d-none d-md-flex">
+                    <a href="" class="navigation__link">صفحه اصلی</a>
+                </li>
+                <li class="icon-chevron-down navigation__item has-megamenu d-none d-md-flex">آموزش ها
+
                     <ul class="navigation__sub">
                         <li class="navigation__sub__item">
-                            <a href="" class="navigation__sub__link">برنامه نویسی</a>
+                            برنامه نویسی وب
+                            <ul class="navigation__sub__menu">
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> سی اس اس</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> جاوا اسکریپت</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">جی کوئری</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">آنگولار جی اس</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> ری اکت جی اس</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__sub__item"> تجارت الکترونیک
+                            <ul class="navigation__sub__menu">
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">بلاک چین</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> شبکه اجتماعی</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> هوش تجاری</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">امنیت اطلاعات</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="navigation__sub__item">
-                            <a href="" class="navigation__sub__link">برنامه نویسی وب</a>
-                        </li>
-                        <li class="navigation__sub__item">
-                            <a href="" class="navigation__sub__link">تجارت الکترونیک</a>
-                        </li>
-                        <li class="navigation__sub__item">
-                            <a href="" class="navigation__sub__link">هوش تجاری</a>
-                        </li>
-                        <li class="navigation__sub__item">
-                            <a href="" class="navigation__sub__link">مدرسه بلاک چین</a>
-                        </li>
-                        <li class="navigation__sub__item">
-                            <a href="" class="navigation__sub__link">سوشیال نت ورک</a>
-                        </li>
-                        <li class="navigation__sub__item">
-                            <a href="" class="navigation__sub__link">کنکور ارشد</a>
+                            کنکور کارشناسی ارشد
+                            <ul class="navigation__sub__menu">
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> طراحی الگوریتم</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">  ساختمان داده</a>
+                                </li>
+
+                            </ul>
                         </li>
 
                     </ul>
+
                 </li>
-                <li class="navigation__item"><a href="" class="navigation__link">ورکشاپ</a></li>
-                <li class="navigation__item register">
-                    <a href="" class="navigation__link button">ثبت نام</a>
-                    <a href="" class="navigation__link button--outline">ورود</a>
+                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">جدید ترین ها</a></li>
+                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">پرفروش ترین ها</a></li>
+                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">ورکشاپ</a></li>
+                <li class="navigation__item profile">
+                    <a href="" class="navigation__link profile__card icon-shopping-cart" data-number="۵۵"></a>
+                    <a href="" class="navigation__link profile__dashbord icon-user">
+
+                    </a>
+                    <div class="profile__mega">
+                        <ul class="profile__list">
+                            <li class="profile__list__item icon-credit-card">
+                                <a href="" class="profile__list__link">
+                                    آموزش های خریداری شده
+                                </a>
+                                <li class="profile__list__item icon-feather">
+                                    <a href="" class="profile__list__link">
+                                        سوابق پرداخت
+                                    </a>
+                                </li>
+                            </li>
+                            <li class="profile__list__item icon-feather icon-shopping-cart">
+                                <a href="" class="profile__list__link">
+                                    خرید اعتبار
+                                </a>
+                            </li>
+                            <li class="profile__list__item icon-log-out">
+                                <a href="" class="profile__list__link">
+                                    خروج
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="profile__cart__box">
+                        <span class="badge">۵۵</span> محصول در سبد خرید شما موجود است
+                        <a href="" class="btn button d-block my-3">رفتن به سبد خرید</a>
+                    </div>
+                    <button type="button" id="ham" class="ham d-none navigation__link">
+                        <span class="ham__line"></span>
+                        <span class="ham__line"></span>
+                        <span class="ham__line"></span>
+                        
+                    </button>
                 </li>
             </ul>
         </div>
@@ -53,7 +128,7 @@
 
     <main>
 
-        <div class="container">
+        <div class="container" style="margin-bottom: 500px;">
 
             <!-- title and breadcrumbs----------------------------------------------------------- -->
             <div class="row">
@@ -259,33 +334,119 @@
                             <div class="collapse" id="second" data-parent="#main">
                                 <div class="lb__course">
                                     <div class="alert alert-info">بعد از خرید آموزش ، لینک های دانلود در همین صحفه و در همین بخش قابل دسترسی خواهد بود</div>
-                                    <div class="item">
-                                        <h5 class="item__title">۱- آشنایی با سی اس اس</h5>
-                                        <div class="item__detail mr-auto">
-                                            <a href="" class="btn btn-primary"> دانلود</a>
-                                            <span class="btn btn-info">۱۸.۵ mb</span>
-                                            <span class="btn btn-info"> ۱۲:۲۰</span>
+                                    <!-- courses button and content combination -->
+                                    <!-- button -->
+                                    <div class="btn btn-block btn-light lb__course__btn icon-plus" data-target="#item-1" data-toggle="collapse">
+                                        <span class="lb__course__btn__info">گام اول</span>
+                                        <span class="lb__course__btn__info">۹ ویدیو</span>
+                                        <span class="lb__course__btn__info">۲:۴۵:۰۰</span>
+                                    </div>
+                                    <!-- content -->
+                                    <div class="collapse show" id="item-1">
+                                        <div class="item">
+                                            <h5 class="item__title icon-play-circle"> آشنایی با سی اس اس</h5>
+                                            <div class="item__detail mr-auto">
+                                                <a href="" class="btn btn-info"> دانلود</a>
+                                                <!-- <span class="btn btn-light">۱۸.۵ mb</span> -->
+                                                <span class="btn"> ۱۲:۲۰</span>
 
+                                            </div>
+                                        </div>
+                                        <div class="item ">
+                                            <h5 class="item__title icon-play-circle">نحوه اضافه کردن grascale</h5>
+                                            <div class="item__detail mr-auto">
+                                                <a href="" class="btn btn-info"> دانلود</a>
+                                                <!-- <span class="btn btn-info">۱۸.۵ mb</span> -->
+                                                <span class="btn"> ۱۲:۲۰</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="item ">
+                                            <h5 class="item__title icon-play-circle">فکلس باکس </h5>
+                                            <div class="item__detail mr-auto">
+                                                <a href="" class="btn btn-info"> دانلود</a>
+                                                <!-- <span class="btn btn-info">۱۸.۵ mb</span> -->
+                                                <span class="btn"> ۱۲:۲۰</span>
+
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="item">
-                                        <h5 class="item__title">۲- نحوه اضافه کردن grascale</h5>
-                                        <div class="item__detail mr-auto">
-                                            <a href="" class="btn btn-primary"> دانلود</a>
-                                            <span class="btn btn-info">۱۸.۵ mb</span>
-                                            <span class="btn btn-info"> ۱۲:۲۰</span>
 
+                                    <!-- button -->
+                                    <div class="btn btn-block btn-light lb__course__btn icon-plus" data-target="#item-2" data-toggle="collapse">
+                                        <span class="lb__course__btn__info">توابع و متغیرها</span>
+                                        <span class="lb__course__btn__info">۱۹ ویدیو</span>
+                                        <span class="lb__course__btn__info">۵:۴۵:۰۰</span>
+                                    </div>
+                                    <!-- content -->
+                                    <div class="collapse" id="item-2">
+                                        <div class="item">
+                                            <h5 class="item__title icon-play-circle"> آشنایی با سی اس اس</h5>
+                                            <div class="item__detail mr-auto">
+                                                <a href="" class="btn btn-info"> دانلود</a>
+                                                <!-- <span class="btn btn-light">۱۸.۵ mb</span> -->
+                                                <span class="btn"> ۱۲:۲۰</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="item ">
+                                            <h5 class="item__title icon-play-circle">نحوه اضافه کردن grascale</h5>
+                                            <div class="item__detail mr-auto">
+                                                <a href="" class="btn btn-info"> دانلود</a>
+                                                <!-- <span class="btn btn-info">۱۸.۵ mb</span> -->
+                                                <span class="btn"> ۱۲:۲۰</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="item ">
+                                            <h5 class="item__title icon-play-circle">فکلس باکس </h5>
+                                            <div class="item__detail mr-auto">
+                                                <a href="" class="btn btn-info"> دانلود</a>
+                                                <!-- <span class="btn btn-info">۱۸.۵ mb</span> -->
+                                                <span class="btn"> ۱۲:۲۰</span>
+
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="item">
-                                        <h5 class="item__title">۲-فکلس باکس </h5>
-                                        <div class="item__detail mr-auto">
-                                            <a href="" class="btn btn-primary"> دانلود</a>
-                                            <span class="btn btn-info">۱۸.۵ mb</span>
-                                            <span class="btn btn-info"> ۱۲:۲۰</span>
 
+                                    <!-- button -->
+                                    <div class="btn btn-block btn-light lb__course__btn icon-plus" data-target="#item-3" data-toggle="collapse">
+                                        <span class="lb__course__btn__info">توابع و متغیرها</span>
+                                        <span class="lb__course__btn__info">۱۹ ویدیو</span>
+                                        <span class="lb__course__btn__info">۵:۴۵:۰۰</span>
+                                    </div>
+                                    <!-- content -->
+                                    <div class="collapse" id="item-3">
+                                        <div class="item">
+                                            <h5 class="item__title icon-play-circle"> آشنایی با سی اس اس</h5>
+                                            <div class="item__detail mr-auto">
+                                                <a href="" class="btn btn-info"> دانلود</a>
+                                                <!-- <span class="btn btn-light">۱۸.۵ mb</span> -->
+                                                <span class="btn"> ۱۲:۲۰</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="item ">
+                                            <h5 class="item__title icon-play-circle">نحوه اضافه کردن grascale</h5>
+                                            <div class="item__detail mr-auto">
+                                                <a href="" class="btn btn-info"> دانلود</a>
+                                                <!-- <span class="btn btn-info">۱۸.۵ mb</span> -->
+                                                <span class="btn"> ۱۲:۲۰</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="item ">
+                                            <h5 class="item__title icon-play-circle">فکلس باکس </h5>
+                                            <div class="item__detail mr-auto">
+                                                <a href="" class="btn btn-info"> دانلود</a>
+                                                <!-- <span class="btn btn-info">۱۸.۵ mb</span> -->
+                                                <span class="btn"> ۱۲:۲۰</span>
+
+                                            </div>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
                             <div class="collapse" id="third" data-parent="#main">
