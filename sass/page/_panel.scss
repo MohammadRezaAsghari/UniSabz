@@ -1,0 +1,99 @@
+.panel {
+    height: 400px;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    &__list {
+        display: flex;
+    }
+    &__item {
+        background-color: rgba(0, 0, 0, 0.08);
+        margin-left: 1.5rem;
+        border-radius: 2rem;
+        position: relative;
+    }
+    &__link {
+        &:visited,
+        &:link {
+            display: inline-block;
+            border-radius: 2rem;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            padding-right: 3.5rem;
+            color: $header-color;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            transition: all .5s;
+        }
+        &:hover {
+            color: white;
+            background-color: $unisabz-color;
+            color: #fff;
+        }
+        &::before {
+            display: block;
+            font-size: 1.3rem;
+            position: absolute;
+            right: 1.3rem;
+            font-family: 'icomoon';
+            color: $header-color;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            transition: all .5s;
+        }
+        &:hover::before {
+            color: #fff;
+        }
+    }
+    &__box {
+        height: 300px;
+    }
+    &__box__holder {
+        @include parent-style;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+    }
+    &__title {
+        font-size: 1.2rem;
+        color: $text-color;
+        font-weight: bold;
+        padding: 1rem 2rem .5rem 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        &::before {
+            font-family: 'icomoon';
+            font-size: 1.5rem;
+            position: absolute;
+            right: 0rem;
+            color: currentColor;
+        }
+    }
+    &__info {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: $gradient-color-first;
+    }
+    &__form {
+        &__input {
+            font-size: 1.4rem;
+            padding: 2rem 1rem;
+        }
+    }
+    .active {
+        color: #fff;
+        background-color: $unisabz-color;
+        color: #fff;
+        &:before {
+            color: #fff;
+        }
+    }
+    &__table {
+        font-size: 1.3rem;
+        th,
+        td {
+            padding: 1rem;
+        }
+    }
+}

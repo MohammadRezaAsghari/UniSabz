@@ -1464,6 +1464,128 @@ input[type="text"] {
   }
 }
 
+.panel {
+  height: 400px;
+  font-size: 1.3rem;
+  margin-top: 3rem;
+}
+
+.panel__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.panel__item {
+  background-color: rgba(0, 0, 0, 0.08);
+  margin-left: 1.5rem;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.panel__link:visited, .panel__link:link {
+  display: inline-block;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  padding-right: 3.5rem;
+  color: #4a4a4a;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.panel__link:hover {
+  color: white;
+  background-color: #82b541;
+  color: #fff;
+}
+
+.panel__link::before {
+  display: block;
+  font-size: 1.3rem;
+  position: absolute;
+  right: 1.3rem;
+  font-family: 'icomoon';
+  color: #4a4a4a;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.panel__link:hover::before {
+  color: #fff;
+}
+
+.panel__box {
+  height: 300px;
+}
+
+.panel__box__holder {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+
+.panel__title {
+  font-size: 1.2rem;
+  color: #7d7d7d;
+  font-weight: bold;
+  padding: 1rem 2rem .5rem 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel__title::before {
+  font-family: 'icomoon';
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0rem;
+  color: currentColor;
+}
+
+.panel__info {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ee0979;
+}
+
+.panel__form__input {
+  font-size: 1.4rem;
+  padding: 2rem 1rem;
+}
+
+.panel .active {
+  color: #fff;
+  background-color: #82b541;
+  color: #fff;
+}
+
+.panel .active:before {
+  color: #fff;
+}
+
+.panel__table {
+  font-size: 1.3rem;
+}
+
+.panel__table th,
+.panel__table td {
+  padding: 1rem;
+}
+
 /* showcase----------------------------------------------------*/
 .showcase {
   background-color: rgba(0, 0, 0, 0.1);

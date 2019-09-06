@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>panel</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <ul class="navigation__menu">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">
+                        <img src="img/log_light_6060.png" alt="">
+                    </a>
+                </li>
+                <li class="navigation__item d-none d-md-flex">
+                    <a href="" class="navigation__link">صفحه اصلی</a>
+                </li>
+                <li class="icon-chevron-down navigation__item has-megamenu d-none d-md-flex">آموزش ها
+
+                    <ul class="navigation__sub">
+                        <li class="navigation__sub__item">
+                            برنامه نویسی وب
+                            <ul class="navigation__sub__menu">
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> سی اس اس</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> جاوا اسکریپت</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">جی کوئری</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">آنگولار جی اس</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> ری اکت جی اس</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__sub__item"> تجارت الکترونیک
+                            <ul class="navigation__sub__menu">
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">بلاک چین</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> شبکه اجتماعی</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> هوش تجاری</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">امنیت اطلاعات</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__sub__item">
+                            کنکور کارشناسی ارشد
+                            <ul class="navigation__sub__menu">
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link"> طراحی الگوریتم</a>
+                                </li>
+                                <li class="navigation__sub__menu__item">
+                                    <a href="" class="navigation__sub__menu__link">  ساختمان داده</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">جدید ترین ها</a></li>
+                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">پرفروش ترین ها</a></li>
+                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">ورکشاپ</a></li>
+                <li class="navigation__item profile">
+                    <a href="" class="navigation__link profile__card icon-shopping-cart" data-number="۵۵"></a>
+                    <a href="" class="navigation__link profile__dashbord icon-user">
+
+                    </a>
+                    <div class="profile__mega">
+                        <ul class="profile__list">
+                            <li class="profile__list__item icon-credit-card">
+                                <a href="" class="profile__list__link">
+                                    آموزش های خریداری شده
+                                </a>
+                                <li class="profile__list__item icon-feather">
+                                    <a href="" class="profile__list__link">
+                                        سوابق پرداخت
+                                    </a>
+                                </li>
+                            </li>
+                            <li class="profile__list__item icon-feather icon-shopping-cart">
+                                <a href="" class="profile__list__link">
+                                    خرید اعتبار
+                                </a>
+                            </li>
+                            <li class="profile__list__item icon-log-out">
+                                <a href="" class="profile__list__link">
+                                    خروج
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="profile__cart__box">
+                        <span class="badge">۵۵</span> محصول در سبد خرید شما موجود است
+                        <a href="" class="btn button d-block my-3">رفتن به سبد خرید</a>
+                    </div>
+                    <button type="button" id="ham" class="ham d-none navigation__link">
+                        <span class="ham__line"></span>
+                        <span class="ham__line"></span>
+                        <span class="ham__line"></span>
+                        
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- panel -->
+
+    <div class="container">
+        <div class="panel">
+            <ul class="panel__list">
+                <li class="panel__item ">
+                    <a href="" class="panel__link icon-user active">اطلاعات کاربری</a>
+                </li>
+                <li class="panel__item ">
+                    <a href="" class="panel__link icon-feather ">سوابق پرداخت</a>
+                </li>
+                <li class="panel__item ">
+                    <a href="" class="panel__link icon-film">آموزش های خریداری شده</a>
+                </li>
+                <li class="panel__item ">
+                    <a href="" class="panel__link icon-edit">ویرایش اطلاعات</a>
+                </li>
+
+
+            </ul>
+            <div class="panel__box">
+                <!-- first box-holder -->
+                <div class="panel__box__holder">
+                    <div class="d-flex flex-column">
+                        <h3 class="panel__title icon-file-plus">کیف پول شما</h3>
+                        <div class="panel__info">مقدار اعتبار حساب شما <span>۲۳.۰۰۰</span> تومان است</div>
+                    </div>
+                    <a href="" class="btn button mr-auto">افزایش اعتبار</a>
+                </div>
+                <!-- second box-holder -->
+                <div class="panel__box__holder">
+                    <form action="" class="panel__form w-100">
+                        <label for="" class="panel__title icon-mail">آدرس ایمیل</label>
+                        <input type="text" class="panel__form__input form-control d-block" value="u-d483030" readonly>
+                        <label for="" class="panel__title icon-lock">رمز عبور</label>
+                        <input type="password" class="panel__form__input  form-control d-block" value="0dfdfk3030" readonly>
+                        <small class="alert alert-info mt-3 bg-light d-block">برای دریافت خدمات از یونی سبز تنها یک نام کاربری و گذرواژه نیاز است . یونی سبز به اطلاعات دیگر از جمله آدرس و یا شماره تلفن همراه نیازی ندارد.</small>
+                        <small class="alert alert-info mt-3 bg-light d-block"> ایمیل و گذرواژه شما نزد یونی سبز کاملا محفوظ است. </small>
+                    </form>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

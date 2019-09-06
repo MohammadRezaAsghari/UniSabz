@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>panel</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+    <!-- navigation -->
     <nav class="navigation">
         <div class="container">
             <ul class="navigation__menu">
@@ -122,6 +125,67 @@
             </ul>
         </div>
     </nav>
+    <!-- panel -->
+
+    <div class="container">
+        <div class="panel">
+            <ul class="panel__list">
+                <li class="panel__item ">
+                    <a href="" class="panel__link icon-user">اطلاعات کاربری</a>
+                </li>
+                <li class="panel__item ">
+                    <a href="" class="panel__link icon-feather ">سوابق پرداخت</a>
+                </li>
+                <li class="panel__item ">
+                    <a href="" class="panel__link icon-film active">آموزش های خریداری شده</a>
+                </li>
+                <li class="panel__item ">
+                    <a href="" class="panel__link icon-edit">ویرایش اطلاعات</a>
+                </li>
+
+
+            </ul>
+            <div class="panel__box">
+                <!-- first box-holder -->
+                <div class="panel__box__holder">
+                    <table class="table panel__table table-bordered">
+                        <thead class="thead-light tex-center">
+                            <tr>
+                                <th scope="col">نام آموزش</th>
+                                <th scope="col">تاریخ خرید</th>
+                                <th scope="col"> لینک آموزش </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>آموزش کامل سی اس اس انیمیشن</td>
+                                <td>۱۷ / ۵ / ۹۹</td>
+                                <td>
+                                    <a href="" class="text-primary">لینک دانلود </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>آموزش کامل سی اس اس انیمیشن</td>
+                                <td>۱۷ / ۵ / ۹۹</td>
+                                <td>
+                                    <a href="" class="text-primary">لینک دانلود </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
