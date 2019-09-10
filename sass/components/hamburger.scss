@@ -1,0 +1,68 @@
+.hmb_holder {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 1500;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.hmb {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 1500;
+    right: 0;
+    transition: margin .5s;
+    margin-right: -250px;
+    transition: all .5s;
+    &__list {
+        margin-top: 50px;
+    }
+    &__item {
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba($text-color, 0.1);
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+        padding: 2rem;
+        &::before {
+            font-family: 'icomoon';
+            font-size: 2rem;
+            align-self: center;
+            color: $text-color;
+            margin-left: 1rem;
+        }
+        &:hover,
+        &:hover::before {
+            color: $gradient-color-first;
+        }
+    }
+    .btn {
+        align-self: flex-end;
+        padding: 1.5rem 0;
+    }
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: inline-block;
+    cursor: pointer;
+    &::before {
+        font-family: 'icomoon';
+        font-size: 2.5rem;
+    }
+}

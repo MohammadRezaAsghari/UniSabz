@@ -1,14 +1,14 @@
-1.ham menu is not complete
+//1.ham menu is not complete
 
 2.buy credit is not complete
 
-3. complete the panel
+//3. complete the panel
 
 4. complete the footer
 
-5. about us page (like maktabkhooneh.org)
+//5. about us page (like maktabkhooneh.org)
 
-6. complete map (you can use tutsplus design for your map)
+//6. complete map (you can use tutsplus design for your map)
 
 people for back developing
 1. alireza
