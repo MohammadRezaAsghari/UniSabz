@@ -4,12 +4,18 @@
     margin-top: 3rem;
     &__list {
         display: flex;
+        @media (max-width: 565px) {
+            flex-direction: column;
+        }
     }
     &__item {
         background-color: rgba(0, 0, 0, 0.08);
         margin-left: 1.5rem;
         border-radius: 2rem;
         position: relative;
+        @media (max-width: 565px) {
+            margin-bottom: 1rem;
+        }
     }
     &__link {
         &:visited,
@@ -23,6 +29,13 @@
             -webkit-transition: all .5s;
             -moz-transition: all .5s;
             transition: all .5s;
+            @media (max-width: 768px) {
+                padding: 1rem;
+                text-align: center;
+            }
+            @media (max-width: 565px) {
+                display: flex;
+            }
         }
         &:hover {
             color: white;
@@ -39,6 +52,14 @@
             -webkit-transition: all .5s;
             -moz-transition: all .5s;
             transition: all .5s;
+            @media (max-width: 768px) {
+                display: none;
+            }
+            @media (max-width: 565px) {
+                display: block;
+                position: static;
+                margin-left: 1rem;
+            }
         }
         &:hover::before {
             color: #fff;
@@ -52,7 +73,12 @@
         padding: 2rem;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         margin: 2rem 0;
+        @media (max-width: 565px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__title {
         font-size: 1.2rem;
@@ -74,6 +100,7 @@
         font-weight: bold;
         font-size: 1.2rem;
         color: $gradient-color-first;
+        margin-bottom: 2rem;
     }
     &__form {
         &__input {

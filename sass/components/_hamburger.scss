@@ -32,6 +32,18 @@
             border-bottom: 1px solid rgba($text-color, 0.1);
         }
     }
+    &__item.more {
+        font-size: 1.3rem;
+        padding: 1.2rem;
+        &::before {
+            font-family: 'icomoon';
+            font-size: 2rem;
+            align-self: center;
+            color: $text-color;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+    }
     &__link {
         display: flex;
         align-items: center;
@@ -47,6 +59,25 @@
         &:hover,
         &:hover::before {
             color: $gradient-color-first;
+        }
+    }
+    &__sub {
+        margin: 1.3rem 0;
+        &__item {
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba($text-color, 0.1);
+            }
+            &:nth-child(odd) {
+                background-color: rgba($text-color, 0.05);
+            }
+        }
+        &__link {
+            display: block;
+            padding: 1.5rem;
+            font-size: 1.2rem;
+            &:hover {
+                color: $gradient-color-first;
+            }
         }
     }
     .btn {
