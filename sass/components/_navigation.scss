@@ -1,6 +1,7 @@
 .navigation {
     height: 70px;
     background-color: $body-color;
+    background-color: $unisabz-dark;
     border-top: 3px solid $gradient-color-first;
     position: relative;
     position: sticky;
@@ -23,7 +24,7 @@
         padding: 0 1rem;
         position: relative;
         transition: background-color, .5s;
-        color: $first-color;
+        color: white;
         cursor: pointer;
         &:first-child {
             padding: 0px;
@@ -52,7 +53,7 @@
     &__link {
         &:link,
         &:visited {
-            color: $first-color;
+            color: white;
             display: flex;
             align-items: center;
         }
@@ -193,6 +194,7 @@
             visibility: hidden;
             transition-property: top, opacity, visibility;
             transition-duration: .3s;
+            color: $unisabz-dark;
             & .badge {
                 font-size: 1.3rem;
                 padding: .5rem;
