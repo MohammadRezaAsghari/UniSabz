@@ -13,8 +13,20 @@
     padding: 0rem;
     margin: 0rem;
     box-shadow: none;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.01);
 }
-
+.card__pagination{
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 100%;
+    border-top: 2px dotted rgba($header-color, 0.2);
+    color: $header-color;
+    padding-top: 2rem;
+}
 .card__header {
     display: flex;
     align-items: center;
@@ -30,6 +42,14 @@
     h2 {
         font-weight: bold;
         font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        &::before{
+            font-family: 'icomoon';
+            font-size: 2rem;
+            padding-left: 1rem;
+            color: $header-color;
+        }
     }
     span {
         font-size: 1.5rem;
@@ -53,6 +73,7 @@
     border-radius: $border-radius;
     transition: all .5s;
     width: 100%;
+    background-image: linear-gradient(30deg , rgba($unisabz-color , .06) 30%, transparent 30%);
     &:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }

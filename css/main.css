@@ -1293,18 +1293,15 @@ input[type="text"] {
   }
 }
 
-.lb__movie {
-  background-color: gray;
-}
-
 .lb__movie video {
   width: 100%;
+  border-radius: 5px;
 }
 
 .lb__detail {
   background-color: white;
-  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
-          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.01);
   border-radius: 5px;
   min-height: 200px;
 }
@@ -1442,9 +1439,16 @@ input[type="text"] {
   }
 }
 
+.rblb__parent {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+  padding: 3rem;
+  border-radius: 5px;
+}
+
 .shopping__page {
-  padding-bottom: 6rem;
-  background-image: linear-gradient(-140deg, transparent 85%, #ee0979 85%);
+  padding-bottom: 1rem;
   position: relative;
 }
 
@@ -2088,6 +2092,28 @@ input[type="text"] {
   margin: 0rem;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.card__pagination {
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  border-top: 2px dotted rgba(74, 74, 74, 0.2);
+  color: #4a4a4a;
+  padding-top: 2rem;
 }
 
 .card__header {
@@ -2116,6 +2142,19 @@ input[type="text"] {
 .card__header h2 {
   font-weight: bold;
   font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__header h2::before {
+  font-family: 'icomoon';
+  font-size: 2rem;
+  padding-left: 1rem;
+  color: #4a4a4a;
 }
 
 .card__header span {
@@ -2142,6 +2181,7 @@ input[type="text"] {
   -webkit-transition: all .5s;
   transition: all .5s;
   width: 100%;
+  background-image: linear-gradient(30deg, rgba(130, 181, 65, 0.06) 30%, transparent 30%);
 }
 
 .card:hover {
@@ -2660,10 +2700,8 @@ input[type="text"] {
 }
 
 .summary {
-  background-color: white;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
-          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.01);
   padding: 2rem 1rem;
 }
 
@@ -2671,6 +2709,10 @@ input[type="text"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2682,14 +2724,17 @@ input[type="text"] {
 }
 
 .summary__price__amount {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: left;
+  color: #ee0979;
 }
 
 .summary__price__note {
+  font-size: 1.3rem;
+  padding-bottom: .5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -2699,7 +2744,7 @@ input[type="text"] {
   padding: 1rem 0;
   padding-right: 3rem;
   font-size: 1.3rem;
-  border-bottom: 1px solid rgba(125, 125, 125, 0.1);
+  border-bottom: 1px solid rgba(125, 125, 125, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2710,9 +2755,13 @@ input[type="text"] {
 
 .summary__feature li:first-child {
   color: #7d7d7d;
-  padding-bottom: 1rem;
+  padding: 1.5rem;
   font-size: 1.3rem;
   padding-right: 0;
+}
+
+.summary__feature li:last-child {
+  border: none;
 }
 
 .summary__feature li::before {
@@ -2724,10 +2773,8 @@ input[type="text"] {
 }
 
 .professor {
-  background-color: white;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
-          box-shadow: 0 0 1rem rgba(125, 125, 125, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.01);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2896,6 +2943,11 @@ input[type="text"] {
 
 .shopping__table {
   text-align: center;
+  font-size: 1.4rem;
+}
+
+.shopping__table td {
+  padding: 1.3rem;
 }
 
 .shopping__discount {
@@ -2903,13 +2955,34 @@ input[type="text"] {
 }
 
 .shopping__title {
+  position: relative;
   text-align: right;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  padding: 1rem;
-  padding-bottom: 2rem;
+  padding: 2rem 3rem;
+  font-weight: bold;
   margin-bottom: 1rem;
-  border-bottom: 1px solid rgba(125, 125, 125, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(130, 181, 65, 0.8);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.shopping__title::before {
+  font-family: 'icomoon';
+  padding-left: 1rem;
+  font-size: 2rem;
+  position: absolute;
+  left: 2rem;
+  -webkit-transform: rotate(-10deg) scale(2);
+          transform: rotate(-10deg) scale(2);
+  color: #fff;
+  opacity: .35;
 }
 
 .text-danger {
@@ -2951,11 +3024,39 @@ input[type="text"] {
   }
 }
 
+.payment__method {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  color: #7d7d7d;
+}
+
 .payment__title {
-  font-size: 1.4rem;
-  padding-bottom: 1.5rem;
+  font-size: 1.6rem;
+  padding: 1.5rem;
   position: relative;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(130, 181, 65, 0.8);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.payment__title::before {
+  font-family: 'icomoon';
+  padding-left: 1rem;
+  font-size: 2rem;
+  position: absolute;
+  left: 2rem;
+  -webkit-transform: rotate(-10deg) scale(2);
+          transform: rotate(-10deg) scale(2);
+  color: #fff;
+  opacity: .25;
 }
 
 .payment__title::after {
@@ -2972,9 +3073,13 @@ input[type="text"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.3rem;
-  padding: 1rem 0;
+  font-size: 1.4rem;
+  padding: 1rem;
   line-height: 2;
+}
+
+.payment__item:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
 }
 
 .payment__item__value {

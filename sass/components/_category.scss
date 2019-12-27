@@ -3,6 +3,7 @@
     overflow: hidden;
     position: relative;
     padding: 6rem 2rem;
+    
     &::before {
         content: "";
         position: absolute;
@@ -14,11 +15,13 @@
         background-color: rgba(0, 0, 0, 0.8);
     }
     &__img {
+        
         width: 100%;
         position: absolute;
         left: 0;
         top: 0;
         z-index: -2;
+
     }
     &__main__title,
     &__sub__title {

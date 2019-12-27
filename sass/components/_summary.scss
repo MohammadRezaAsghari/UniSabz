@@ -1,8 +1,11 @@
 .summary {
-    @include parent-style;
+    // @include parent-style;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.01);
     padding: 2rem 1rem;
     &__price {
         display: flex;
+        flex-direction: column;
         align-items: center;
         flex-basis: 100%;
         font-size: 1.5rem;
@@ -10,25 +13,31 @@
         margin-bottom: 1rem;
     }
     &__price__amount {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         flex: 1;
         text-align: left;
+        color: $gradient-color-first;
     }
     &__price__note {
+        font-size: 1.3rem;
+        padding-bottom: .5rem;
         flex: 1;
     }
     &__feature li {
         padding: 1rem 0;
         padding-right: 3rem;
         font-size: 1.3rem;
-        border-bottom: 1px solid rgba($text-color, 0.1);
+        border-bottom: 1px solid rgba($text-color, 0.2);
         display: flex;
         align-items: center;
         &:first-child {
             color: $text-color;
-            padding-bottom: 1rem;
+            padding: 1.5rem;
             font-size: 1.3rem;
             padding-right: 0;
+        }
+        &:last-child {
+            border: none;
         }
         &::before {
             font-size: 1.6rem;

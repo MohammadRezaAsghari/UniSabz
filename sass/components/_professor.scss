@@ -1,5 +1,7 @@
 .professor {
-    @include parent-style;
+    // @include parent-style;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.01);
     display: flex;
     flex-direction: column;
     justify-content: center;

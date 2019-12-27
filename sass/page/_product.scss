@@ -28,15 +28,16 @@
                     margin-top: 3rem;
                 }
                 &__movie {
-                    // height: 400px;
-                    background-color: gray;
                     video {
                         width: 100%;
+                        border-radius: $border-radius;;
                     }
                 }
                 &__detail {
                     background-color: white;
-                    box-shadow: $box-shadow;
+                    // box-shadow: $box-shadow;
+                    border: 1px solid rgba(0,0,0,0.1);
+                    background-color: rgba(0,0,0,0.01);
                     border-radius: $border-radius;
                     min-height: 200px;
                     & .btn__group {
@@ -141,4 +142,11 @@
                 @media (max-width: 991px) {
                     padding-left: 0px;
                 }
+            }
+
+            .rblb__parent{
+                background-color: #fff;
+                box-shadow: $box-shadow;
+                padding: 3rem;
+                border-radius: $border-radius;
             }

@@ -11,18 +11,39 @@
     text-align: center;
     &__table {
         text-align: center;
+        font-size: 1.4rem;
+        td{
+            padding: 1.3rem;
+        }
     }
     &__discount {
         padding: 2rem;
     }
     &__title {
+        position: relative;
         text-align: right;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        
         font-weight: bold;
-        padding: 1rem;
-        padding-bottom: 2rem;
+        padding: 2rem 3rem;
+        font-weight: bold;
         margin-bottom: 1rem;
-        border-bottom: $border-light;
+        display: flex;
+        align-items: center;
+        background-color: rgba($unisabz-color , 0.8);
+        color: #fff;
+        border-radius: $border-radius;
+        &::before{
+            font-family: 'icomoon';
+            padding-left: 1rem;
+            font-size: 2rem;
+            position: absolute;
+            left: 2rem;
+            transform: rotate(-10deg) scale(2) ;
+            color: #fff;
+            opacity: .35;
+
+        }
     }
 }
 
@@ -46,11 +67,32 @@
             @include circle(-25px, -25px, 60px, 60px, transparent, 15px, top, left, true);
         }
     }
+    &__method{
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        padding-bottom: 1rem;
+        color: $text-color;
+    }
     &__title {
-        font-size: 1.4rem;
-        padding-bottom: 1.5rem;
+        font-size: 1.6rem;
+        padding: 1.5rem;
         position: relative;
         font-weight: bold;
+        display: flex;
+        align-items: center;
+        background-color: rgba($unisabz-color , 0.8);
+        color: #fff;
+        border-radius: $border-radius;
+        &::before {
+            font-family: 'icomoon';
+            padding-left: 1rem;
+            font-size: 2rem;
+            position: absolute;
+            left: 2rem;
+            transform: rotate(-10deg) scale(2) ;
+            color: #fff;
+            opacity: .25;
+        }
         &::after {
             content: "";
             display: block;
@@ -65,9 +107,12 @@
     // &__list {}
     &__item {
         display: flex;
-        font-size: 1.3rem;
-        padding: 1rem 0;
+        font-size: 1.4rem;
+        padding: 1rem;
         line-height: 2;
+        &:nth-child(even){
+            background-color: rgba(0,0,0,0.02);
+        }
     }
     &__item__value {
         margin-right: auto;
