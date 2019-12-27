@@ -11,76 +11,53 @@
 </head>
 
 <body>
-    <!-- navigation -->
+    <!-- this is hambergurmen -->
+    <div class="hmb_holder">
+
+        <nav class="hmb">
+            <div class="close icon-x"></div>
+            <ul class="hmb__list">
+                <li class="hmb__item"><a href="" class="hmb__link  icon-home">صفحه اصلی</a></li>
+                <li class="hmb__item"><a href="" class="hmb__link  icon-search"> جست و جو</a></li>
+                <li class="hmb__item more icon-plus" data-target="#hmb-more" data-toggle="collapse">آموزش ها
+                    <ul class="hmb__sub collapse" id="hmb-more">
+                        <li class="hmb__sub__item"><a href="" class="hmb__sub__link">وب و برنامه نویسی</a></li>
+                        <li class="hmb__sub__item"><a href="" class="hmb__sub__link">مدرسه بلاک چین</a></li>
+                        <li class="hmb__sub__item"><a href="" class="hmb__sub__link">هوش تجاری</a></li>
+                        <li class="hmb__sub__item"><a href="" class="hmb__sub__link">شبکه های اجتماعی</a></li>
+                    </ul>
+                </li>
+                <li class="hmb__item"><a href="" class="hmb__link  icon-plus-square"> جدیدترین ها</a></li>
+                <li class="hmb__item"><a href="" class="hmb__link  icon-star"> پروفروش ترین ها</a></li>
+                <li class="hmb__item"><a href="" class="hmb__link  icon-trello"> ورکشاپ</a></li>
+                <li class="hmb__item"><a href="" class="hmb__link  icon-info"> درباره ما</a></li>
+
+            </ul>
+
+            <div class="mt-auto">
+                <a href="signIn.html" class="btn button btn-block">ورود</a>
+                <a href="signUp.html" class="btn button--outline-dark btn-block">ثبت نام</a>
+            </div>
+
+        </nav>
+    </div>
+
+    <!--this navigation is for loged-in users -->
+
     <nav class="navigation">
         <div class="container">
             <ul class="navigation__menu">
                 <li class="navigation__item">
                     <a href="" class="navigation__link">
-                        <img src="img/log_light_6060.png" alt="">
+                        <img src="img/unisabz_logo_6060.png" alt="">
                     </a>
                 </li>
                 <li class="navigation__item d-none d-md-flex">
                     <a href="" class="navigation__link">صفحه اصلی</a>
                 </li>
-                <li class="icon-chevron-down navigation__item has-megamenu d-none d-md-flex">آموزش ها
-
-                    <ul class="navigation__sub">
-                        <li class="navigation__sub__item">
-                            برنامه نویسی وب
-                            <ul class="navigation__sub__menu">
-                                <li class="navigation__sub__menu__item">
-                                    <a href="" class="navigation__sub__menu__link"> سی اس اس</a>
-                                </li>
-                                <li class="navigation__sub__menu__item">
-                                    <a href="" class="navigation__sub__menu__link"> جاوا اسکریپت</a>
-                                </li>
-                                <li class="navigation__sub__menu__item">
-                                    <a href="" class="navigation__sub__menu__link">جی کوئری</a>
-                                </li>
-                                <li class="navigation__sub__menu__item">
-                                    <a href="" class="navigation__sub__menu__link">آنگولار جی اس</a>
-                                </li>
-                                <li class="navigation__sub__menu__item">
-                                    <a href="" class="navigation__sub__menu__link"> ری اکت جی اس</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="navigation__sub__item"> تجارت الکترونیک
-                            <ul class="navigation__sub__menu">
-                                <li class="navigation__sub__menu__item">
-                                    <a href="" class="navigation__sub__menu__link">بلاک چین</a>
-                                </li>
-                                <li class="navigation__sub__menu__item">
-                                    <a href="" class="navigation__sub__menu__link"> شبکه اجتماعی</a>
-                                </li>
-                                <li class="navigation__sub__menu__item">
-                                    <a href="" class="navigation__sub__menu__link"> هوش تجاری</a>
-                                </li>
-                                <li class="navigation__sub__menu__item">
-                                    <a href="" class="navigation__sub__menu__link">امنیت اطلاعات</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="navigation__sub__item">
-                            کنکور کارشناسی ارشد
-                            <ul class="navigation__sub__menu">
-                                <li class="navigation__sub__menu__item">
-                                    <a href="" class="navigation__sub__menu__link"> طراحی الگوریتم</a>
-                                </li>
-                                <li class="navigation__sub__menu__item">
-                                    <a href="" class="navigation__sub__menu__link">  ساختمان داده</a>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                    </ul>
-
-                </li>
-                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">جدید ترین ها</a></li>
+                <!-- <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">جدید ترین ها</a></li> -->
                 <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">پرفروش ترین ها</a></li>
-                <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">ورکشاپ</a></li>
+                <!-- <li class="navigation__item d-none d-md-flex"><a href="" class="navigation__link">ورکشاپ</a></li> -->
                 <li class="navigation__item profile">
                     <a href="" class="navigation__link profile__card icon-shopping-cart" data-number="۵۵"></a>
                     <a href="" class="navigation__link profile__dashbord icon-user">
@@ -122,6 +99,20 @@
                         
                     </button>
                 </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="library">
+        <div class="container">
+            <ul class="library__list">
+                <li class="library__item "><a href="" class="library__link icon-code">سی اس اس</a></li>
+                <li class="library__item"><a href="" class="library__link icon-code">جاوااسکریپت</a></li>
+                <li class="library__item"><a href="" class="library__link icon-code">فریم ورک</a></li>
+                <li class="library__item"><a href="" class="library__link icon-code">پایتون</a></li>
+                <li class="library__item"><a href="" class="library__link icon-code">هوش تجاری</a></li>
+                <li class="library__item"><a href="" class="library__link icon-code">بلاک چین</a></li>
+                <li class="library__item"><a href="" class="library__link icon-code">دیزاین</a></li>
+                <li class="library__item"><a href="" class="library__link icon-code">کنکور ارشد</a></li>
             </ul>
         </div>
     </nav>

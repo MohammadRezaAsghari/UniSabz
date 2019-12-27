@@ -1,12 +1,3 @@
-people for back developing
-1. alireza
-2. mostafa ahmadi
-3. mohammad hossein fallah
-4. mohammad hossein afshari
-
-
-
 --۳. صفحه درباره ما یا تماس با ما
 --۴. صفحه جست و جو
 ۶. صحفه خرید اعتبار
---۷. صفحه نقشه راه

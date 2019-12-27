@@ -2293,26 +2293,23 @@ input[type="text"] {
 .card .badge {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  padding: .6rem 2rem;
-  font-size: 1.1rem;
-  position: absolute;
-  top: 1rem;
-  right: 0;
-  border-radius: 0px;
-}
-
-.card .badge::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 0px;
-  width: 0px;
+  padding: .5rem 2rem;
+  font-size: 1.2rem;
   position: absolute;
   top: 0;
-  right: 100%;
-  border-left: none;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 1rem;
+  border-radius: 5px;
+  word-spacing: -2px;
+}
+
+.card .badge-success {
+  background-color: #82b541;
+}
+
+.card .badge-danger {
+  background-color: #ee0979;
 }
 
 /* carousel----------------------------------------------------*/

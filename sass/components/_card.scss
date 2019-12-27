@@ -38,6 +38,7 @@
     img {
         width: 50px;
         margin-left: 1rem;
+        
     }
     h2 {
         font-weight: bold;
@@ -98,6 +99,7 @@
     &-img-top {
         border-top-right-radius: $border-radius;
         border-top-left-radius: $border-radius;
+        
     }
     &__footer {
         display: flex;
@@ -154,24 +156,32 @@
     }
     .badge {
         align-self: flex-start;
-        padding: .6rem 2rem;
-        font-size: 1.1rem;
+        padding: .5rem 2rem;
+        font-size: 1.2rem;
         position: absolute;
-        top: 1rem;
-        right: 0;
-        border-radius: 0px;
-        &::before {
-            content: "";
-            display: block;
-            position: absolute;
-            height: 0px;
-            width: 0px;
-            position: absolute;
-            top: 0;
-            right: 100%;
-            border-left: none;
-            border-top-color: transparent;
-            border-bottom-color: transparent;
-        }
+        top: 0;
+        transform: translateY(-50%);
+        right: 1rem;
+        border-radius: 5px;
+        word-spacing: -2px;
+        // &::before {
+        //     content: "";
+        //     display: block;
+        //     position: absolute;
+        //     height: 0px;
+        //     width: 0px;
+        //     position: absolute;
+        //     top: 0;
+        //     right: 100%;
+        //     border-left: none;
+        //     border-top-color: transparent;
+        //     border-bottom-color: transparent;
+        // }
+    }
+    .badge-success{
+        background-color: $unisabz-color;
+    }
+    .badge-danger{
+        background-color: $gradient-color-first;
     }
 }
